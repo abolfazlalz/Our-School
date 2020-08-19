@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="50dp"
+    android:viewportWidth="520"
+    android:viewportHeight="520">
+
+    <path
+        android:name="White-Cloud"
+        android:fillColor="#000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="5"
+        android:strokeMiterLimit="10"
+        android:pathData="M288.31,135.87H120.27c-11.05,0-20,8.95-20,20v94.78c0,11.05,8.95,20,20,20h9.29v54.66 l54.66-54.66h104.09c11.05,0,20-8.95,20-20v-94.78C308.31,144.82,299.35,135.87,288.31,135.87z" />
+    <path
+        android:name="Line-3"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="10"
+        android:strokeMiterLimit="10"
+        android:pathData="M 132.69 239.69 L 282.69 239.69" />
+    <path
+        android:name="Line-2"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="10"
+        android:strokeMiterLimit="10"
+        android:pathData="M 132.69 205.99 L 282.69 205.99" />
+    <path
+        android:name="Line-1"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="10"
+        android:strokeMiterLimit="10"
+        android:pathData="M 132.69 170.55 L 282.69 170.55" />
+    <path
+        android:name="Black-Cloud"
+        android:fillColor="#FFFFFF"
+        android:pathData="M399.73,194.69h-79.02v69.06c0,11.05-8.95,20-20,20h-89.02v25.72c0,11.05,8.95,20,20,20h104.09 l54.66,54.66v-54.66h9.29c11.05,0,20-8.95,20-20v-94.78C419.73,203.65,410.78,194.69,399.73,194.69z" />
+    <path
+        android:name="Black-Line-3"
+        android:strokeColor="#000000"
+        android:strokeWidth="10"
+        android:strokeMiterLimit="10"
+        android:pathData="M 233.31 292.29 L 383.31 292.29" />
+    <path
+        android:name="Black-Line-2"
+        android:strokeColor="#000000"
+        android:strokeWidth="10"
+        android:strokeMiterLimit="10"
+        android:pathData="M 320.71 258.58 L 383.31 258.58" />
+    <path
+        android:name="Black-Line-1_1_"
+        android:strokeColor="#000000"
+        android:strokeWidth="10"
+        android:strokeMiterLimit="10"
+        android:pathData="M 320.71 223.14 L 383.31 223.14" />
+</vector>

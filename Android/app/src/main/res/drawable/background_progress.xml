@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020. Abl-Developer.
+  ~ Abl-Developer by Abolfazl Managing.
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape
+            android:innerRadiusRatio="2.3"
+            android:shape="ring"
+            android:useLevel="false"
+            android:type="sweep"
+            android:thicknessRatio="15.0">
+            <solid android:color="#e0e0e0"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <rotate
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:fromDegrees="-90"
+            android:toDegrees="-90">
+            <shape
+                android:innerRadiusRatio="2.3"
+                android:shape="ring"
+                android:angle="0"
+                android:type="sweep"
+                android:thicknessRatio="15.0">
+                <solid android:color="@color/colorAccent"/>
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

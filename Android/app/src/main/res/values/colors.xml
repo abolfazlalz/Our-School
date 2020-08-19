@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--
+    Old Green Color Primary
+    <color name="colorPrimary">#63B877</color>
+    -->
+    <color name="colorPrimary">#4E99FF</color>
+    <color name="colorPrimaryDark">#362FF8</color>
+    <color name="colorAccent">#03AFDA</color>
+    <color name="backgroundColor">#ffffff</color>
+    <color name="cardViewBackgroundColor">#ffffff</color>
+    <color name="borderColor">#707070</color>
+    <color name="hintTextColor">#A6A6A6</color>
+    <color name="headerTextColor">#5F5F5F</color>
+    <color name="colorTextView">#3C3C3C</color>
+    <color name="textColorPrimary">#ffffff</color>
+
+<!--    const colors-->
+    <color name="colorFailToast">#B41F24</color>
+    <color name="colorSuccessToast">#18B24B</color>
+    <color name="colorInformationToast">#B3B3B3</color>
+</resources>

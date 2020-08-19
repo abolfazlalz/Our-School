@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020. Abl-Developer.
+  ~ Abl-Developer by Abolfazl Managing.
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/book_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/book_image"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="false"
+        android:src="@drawable/img_book_accent"/>
+
+    <TextView
+        android:id="@+id/book_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/library_page"/>
+
+</LinearLayout>

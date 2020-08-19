@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/RegisterPadding"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/headerImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/RegisterField.Header"
+        android:text="@string/confirm_phone_header"/>
+
+    <TextView
+        android:id="@+id/informationText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/headerImage"
+        android:text="@string/confirm_information_text"
+        style="@style/RegisterField.Information"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/confirmPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/informationText"
+        style="@style/Register.Field"
+        android:background="@drawable/register_field"
+        android:inputType="number"
+        android:imeOptions="actionNext"
+        android:hint="@string/confirm_code"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/resendCodeTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/confirmPhone"
+        android:layout_marginTop="5dp"
+        android:text="@string/resend_code"
+        />
+
+    <Button
+        android:id="@+id/resendCodeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/confirmPhone"
+        android:layout_marginTop="5dp"
+        android:text="@string/new_resent_code"
+        android:textColor="@color/colorPrimary"
+        android:visibility="gone"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/changePhoneNumber"
+        android:text="@string/next"
+        android:background="@color/colorPrimary"
+        style="@style/Register.Field.PrimaryButton"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/changePhoneNumber"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/edit_phone_number"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

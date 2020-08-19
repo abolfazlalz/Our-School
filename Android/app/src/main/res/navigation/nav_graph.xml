@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoginFragment">
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.futech.our_school.activities.register.LoginFragment"
+        android:label="@string/login_fragment_label"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_LoginFragment_to_CreateAccount"
+            app:destination="@id/CreateAccountFragment" />
+        <action
+            android:id="@+id/action_LoginFragment_to_Loading"
+            app:destination="@id/RegisterLoadingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CreateAccountFragment"
+        android:name="com.futech.our_school.activities.register.CreateAccountFragment"
+        android:label="@string/create_account_phone_fragment_label"
+        tools:layout="@layout/fragment_create_account">
+
+        <action
+            android:id="@+id/action_CreateAccountFragment_to_LoginActivity"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_CreateAccountFragment_to_Loading"
+            app:destination="@id/RegisterLoadingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/RegisterLoadingFragment"
+        android:name="com.futech.our_school.activities.register.RegisterAccountComplete"
+        android:label="@string/create_account_phone_fragment_label"
+        tools:layout="@layout/fragment_register_loading">
+
+        <action
+            android:id="@+id/action_loading_to_CreateAccount"
+            app:destination="@id/CreateAccountFragment" />
+
+        <action
+            android:id="@+id/action_loading_to_Login"
+            app:destination="@id/LoginFragment" />
+    </fragment>
+</navigation>

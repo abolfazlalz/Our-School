@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/RegisterPadding"
+    tools:context=".activities.register.create_account.CreateAccountPhoneNumberFragment">
+
+
+    <TextView
+        android:id="@+id/headerImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/RegisterField.Header"
+        android:text="@string/create_account_header"/>
+
+    <TextView
+        android:id="@+id/informationText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/headerImage"
+        android:text="@string/create_account_information_text"
+        style="@style/RegisterField.Information"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/informationText"
+        style="@style/Register.Field"
+        android:background="@drawable/register_field"
+        android:inputType="phone"
+        android:hint="@string/mobile_phone_number"
+        android:layout_marginTop="50dp"
+        android:imeOptions="actionNext"
+        android:drawableRight="@drawable/ic_phone"
+        tools:ignore="RtlHardcoded" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/changePasswordBtn"
+        android:text="@string/next"
+        android:background="@color/colorPrimary"
+        style="@style/Register.Field.PrimaryButton"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/changePasswordBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/login_text"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

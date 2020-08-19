@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="50dp"
+    android:viewportWidth="520"
+    android:viewportHeight="520">
+
+    <path
+        android:name="Book-Bottom"
+        android:strokeColor="#707070"
+        android:strokeWidth="5"
+        android:strokeMiterLimit="10"
+        android:pathData="M436.18,389.59H160.29c-1.73,0-2.2-2.38-0.6-3.03l0,0c28.95-11.87,28.95-52.87,0-64.74l0,0 c-1.6-0.66-1.13-3.03,0.6-3.03h275.89c22.01,0,39.86,15.85,39.86,35.4v0C476.03,373.74,458.19,389.59,436.18,389.59z" />
+    <path
+        android:name="Book-Center"
+        android:fillColor="#707070"
+        android:strokeColor="#707070"
+        android:strokeWidth="5"
+        android:strokeMiterLimit="10"
+        android:pathData="M459.37,318.78H183.48c-1.73,0-2.2-2.38-0.6-3.03l0,0c28.95-11.87,28.95-52.87,0-64.74l0,0 c-1.6-0.66-1.13-3.03,0.6-3.03h275.89c22.01,0,39.86,15.85,39.86,35.4v0C499.23,302.93,481.38,318.78,459.37,318.78z" />
+    <path
+        android:name="Book-Top"
+        android:strokeColor="#707070"
+        android:strokeWidth="5"
+        android:strokeMiterLimit="10"
+        android:pathData="M436.18,247.97H160.29c-1.73,0-2.2-2.38-0.6-3.03l0,0c28.95-11.87,28.95-52.87,0-64.74l0,0 c-1.6-0.66-1.13-3.03,0.6-3.03h275.89c22.01,0,39.86,15.85,39.86,35.4v0C476.03,232.12,458.19,247.97,436.18,247.97z" />
+    <path
+        android:name="Book"
+        android:strokeColor="#707070"
+        android:strokeWidth="5"
+        android:strokeMiterLimit="10"
+        android:pathData="M93.98,128.41l-73.2,242.36l68.92,20.82l73.2-242.36L93.98,128.41z M133.24,182.84l-36.6-11.06 l9.1-30.14l36.6,11.06L133.24,182.84z" />
+    <path
+        android:name="Marker"
+        android:fillColor="#707070"
+        android:pathData="M93.98,128.41l-15.85,52.47l68.92,20.82l15.85-52.47L93.98,128.41z M133.24,182.84l-36.6-11.06l9.1-30.14 l36.6,11.06L133.24,182.84z" />
+</vector>

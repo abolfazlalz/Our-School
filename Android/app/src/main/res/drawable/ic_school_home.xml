@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="50dp"
+    android:viewportWidth="520"
+    android:viewportHeight="520">
+
+    <path
+        android:name="Gable-Roof"
+        android:fillColor="#000000"
+        android:strokeColor="#000000"
+        android:strokeWidth="5"
+        android:strokeMiterLimit="10"
+        android:pathData="M481.78,227.98H35.53c-2.4,0-3.73-2.77-2.24-4.64l65.96-83.12c0.54-0.68,1.37-1.08,2.24-1.08 h315.59c0.88,0,1.72,0.41,2.26,1.1l64.7,83.12C485.5,225.24,484.16,227.98,481.78,227.98z" />
+    <path
+        android:name="Home"
+        android:strokeColor="#000000"
+        android:strokeWidth="5"
+        android:strokeMiterLimit="10"
+        android:pathData="M355.6,224.18l-91.21-111.93c-2.41-2.96-6.35-2.96-8.76,0L164.4,224.18 c-1.16,1.43-1.82,3.36-1.82,5.38v116.38h55.05v-42.51c0-23.48,19.03-42.51,42.51-42.51h0c23.48,0,42.51,19.03,42.51,42.51v42.51 h54.75V229.55C357.41,227.54,356.76,225.6,355.6,224.18z" />
+    <path
+        android:name="Circle-Window"
+        android:fillColor="#000000"
+        android:pathData="M 259.38 172.5 C 272.463625723 172.5 283.07 183.106374277 283.07 196.19 C 283.07 209.273625723 272.463625723 219.88 259.38 219.88 C 246.296374277 219.88 235.69 209.273625723 235.69 196.19 C 235.69 183.106374277 246.296374277 172.5 259.38 172.5 Z" />
+    <path
+        android:name="Wall-Left"
+        android:strokeColor="#000000"
+        android:strokeWidth="5"
+        android:strokeMiterLimit="10"
+        android:pathData="M 49.51 227.98 H 162.59 V 345.94 H 49.51 V 227.98 Z" />
+    <path
+        android:name="Window-LLB"
+        android:fillColor="#000000"
+        android:pathData="M93.13,323.21H68.86c-1.58,0-2.87-1.28-2.87-2.87v-24.27c0-1.58,1.28-2.87,2.87-2.87h24.27 c1.58,0,2.87,1.28,2.87,2.87v24.27C96,321.93,94.71,323.21,93.13,323.21z" />
+    <path
+        android:name="Window-LLT"
+        android:fillColor="#000000"
+        android:pathData="M92.71,274.23H68.44c-1.58,0-2.87-1.28-2.87-2.87V247.1c0-1.58,1.28-2.87,2.87-2.87h24.27 c1.58,0,2.87,1.28,2.87,2.87v24.27C95.57,272.95,94.29,274.23,92.71,274.23z" />
+    <path
+        android:name="Window-LRB"
+        android:fillColor="#000000"
+        android:pathData="M143.24,323.98h-24.27c-1.58,0-2.87-1.28-2.87-2.87v-24.27c0-1.58,1.28-2.87,2.87-2.87h24.27 c1.58,0,2.87,1.28,2.87,2.87v24.27C146.1,322.7,144.82,323.98,143.24,323.98z" />
+    <path
+        android:name="Window-LRT"
+        android:fillColor="#000000"
+        android:pathData="M142.81,275h-24.27c-1.58,0-2.87-1.28-2.87-2.87v-24.27c0-1.58,1.28-2.87,2.87-2.87h24.27 c1.58,0,2.87,1.28,2.87,2.87v24.27C145.68,273.72,144.4,275,142.81,275z" />
+    <path
+        android:name="Wall-Right"
+        android:strokeColor="#000000"
+        android:strokeWidth="5"
+        android:strokeMiterLimit="10"
+        android:pathData="M 357.41 227.98 H 470.49 V 345.94 H 357.41 V 227.98 Z" />
+    <path
+        android:name="Window-RLB"
+        android:fillColor="#000000"
+        android:pathData="M402.44,322.45h-24.27c-1.58,0-2.87-1.28-2.87-2.87v-24.27c0-1.58,1.28-2.87,2.87-2.87h24.27 c1.58,0,2.87,1.28,2.87,2.87v24.27C405.3,321.16,404.02,322.45,402.44,322.45z" />
+    <path
+        android:name="Window-RLT"
+        android:fillColor="#000000"
+        android:pathData="M402.02,273.47h-24.27c-1.58,0-2.87-1.28-2.87-2.87v-24.27c0-1.58,1.28-2.87,2.87-2.87h24.27 c1.58,0,2.87,1.28,2.87,2.87v24.27C404.88,272.18,403.6,273.47,402.02,273.47z" />
+    <path
+        android:name="Window-RRB"
+        android:fillColor="#000000"
+        android:pathData="M452.54,323.21h-24.27c-1.58,0-2.87-1.28-2.87-2.87v-24.27c0-1.58,1.28-2.87,2.87-2.87h24.27 c1.58,0,2.87,1.28,2.87,2.87v24.27C455.41,321.93,454.13,323.21,452.54,323.21z" />
+    <path
+        android:name="Window-RRT"
+        android:fillColor="#000000"
+        android:pathData="M452.12,274.23h-24.27c-1.58,0-2.87-1.28-2.87-2.87V247.1c0-1.58,1.28-2.87,2.87-2.87h24.27 c1.58,0,2.87,1.28,2.87,2.87v24.27C454.99,272.95,453.7,274.23,452.12,274.23z" />
+</vector>

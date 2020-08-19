@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="50dp"
+    android:viewportWidth="520"
+    android:viewportHeight="520">
+
+    <path
+        android:name="Body"
+        android:strokeColor="#707070"
+        android:strokeWidth="10"
+        android:strokeMiterLimit="10"
+        android:pathData="M250.23,129.41L102.76,260.75c-5.69,5.06-8.93,12.28-8.93,19.86v105.4 c0,12.69,8.96,22.98,20.02,22.98h100.08c0.91,0,1.65-0.73,1.65-1.63v-91.04c0-5.97,4.89-10.81,10.91-10.81h49.69 c6.03,0,10.91,4.84,10.91,10.81v91.04c0,0.9,0.74,1.63,1.65,1.63h100.08c11.05,0,20.02-10.29,20.02-22.98v-105.4 c0-7.58-3.25-14.79-8.93-19.86L252.43,129.41C251.8,128.85,250.85,128.85,250.23,129.41z" />
+    <path
+        android:name="Rooftop"
+        android:strokeColor="#707070"
+        android:strokeWidth="10"
+        android:strokeMiterLimit="10"
+        android:pathData="M444.68,260.28l-73.31-67.79v-71.49c0-2.78-1.96-5.03-4.38-5.03h-40.5 c-2.42,0-4.38,2.25-4.38,5.03v24.46c0,0.57-0.66,0.87-1.08,0.49l-68.45-63.3l-0.02-0.02c-0.72-0.68-1.9-0.68-2.63-0.01L57.97,260.16 c-2.05,1.9-2.2,5.13-0.34,7.21l7.1,7.96c1.86,2.09,5.04,2.24,7.09,0.35L245.1,115.44c3.49-3.23,8.82-3.23,12.31,0L430.83,275.8 c2.05,1.9,5.22,1.74,7.09-0.35l7.1-7.96C446.89,265.41,446.73,262.18,444.68,260.28z" />
+</vector>

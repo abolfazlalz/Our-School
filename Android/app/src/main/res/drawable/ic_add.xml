@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020. Abl-Developer.
+  ~ Abl-Developer by Abolfazl Managing.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="520"
+    android:viewportHeight="520">
+
+    <path android:pathData="M442.74,204.51H307.48V69.26c0-2.76-2.24-5-5-5h-84.97c-2.76,0-5,2.24-5,5v135.25H77.26c-2.76,0-5,2.24-5,5v84.97
+	c0,2.76,2.24,5,5,5h135.25v135.25c0,2.76,2.24,5,5,5h84.97c2.76,0,5-2.24,5-5V299.48h135.25c2.76,0,5-2.24,5-5v-84.97
+	C447.74,206.75,445.5,204.51,442.74,204.51z"
+        android:fillColor="#ffff"/>
+
+</vector>

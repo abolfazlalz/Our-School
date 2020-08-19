@@ -1,0 +1,45 @@
+html[lang="fa"] {
+    direction: rtl;
+}
+
+.register {
+    width: 550px;
+    background-color: cadetblue;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.register header {
+    padding: 5px 15px 0;
+}
+
+.register div {
+    padding: 2px 15px 15px;
+}
+
+.register input[type='password'], .register input[type='text'] {
+    padding: 5px 5px;
+    border-radius: 5px;
+    border-width: 1px;
+    width: 350px;
+}
+
+.register input[type='button'], .register input[type='submit'] {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 2px 15px;
+    border-radius: 5px;
+    border-width: 1px;
+    font-weight: bold;
+}
+
+.register input[type='submit'] {
+    background-color: darkslategray;
+    color: white;
+}
+
+.register input[type='button'] {
+    color: darkslategray;
+    background: none;
+    border: none;
+}

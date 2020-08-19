@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/RegisterPadding"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/hint_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select_school_hint"
+                android:textColor="#ff000f"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="18sp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/state_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/state_spinner"
+                app:layout_constraintTop_toBottomOf="@id/hint_text"
+                android:textSize="18sp"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/states_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/register_spinner"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                app:layout_constraintTop_toBottomOf="@id/state_text" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/city_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/city_spinner"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/states_spinner" />
+
+            <Spinner
+                android:id="@+id/city_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/register_spinner"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                app:layout_constraintTop_toBottomOf="@id/city_text" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/school_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/school_spinner"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/city_spinner" />
+
+            <Spinner
+                android:id="@+id/school_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/register_spinner"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                app:layout_constraintTop_toBottomOf="@id/school_text" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/class_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/class_spinner"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/school_spinner" />
+
+            <Spinner
+                android:id="@+id/class_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/register_spinner"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                app:layout_constraintTop_toBottomOf="@id/class_text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/privacy_signup_school"
+                app:layout_constraintTop_toBottomOf="@id/class_spinner" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/register_action_button"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/done_btn"
+        android:enabled="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

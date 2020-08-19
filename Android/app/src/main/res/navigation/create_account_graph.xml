@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/create_account_graph"
+    app:startDestination="@id/createAccountPhoneNumberFragment">
+
+    <fragment
+        android:id="@+id/createAccountPhoneNumberFragment"
+        android:name="com.futech.our_school.activities.register.create_account.CreateAccountPhoneNumberFragment"
+        android:label="@string/mobile_phone_number"
+        tools:layout="@layout/cs_phone_number">
+
+        <action
+            android:id="@+id/action_EditPhone_to_ConfirmPhone"
+            app:destination="@id/createAccountConfirmPhone"
+            app:enterAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_createAccountPhoneNumberFragment_self"
+            app:destination="@id/createAccountPhoneNumberFragment" />
+        <action
+            android:id="@+id/action_EditPhone_to_setInformation"
+            app:destination="@id/createAccountSetInformation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createAccountConfirmPhone"
+        android:name="com.futech.our_school.activities.register.create_account.CreateAccountConfirmPhoneFragment"
+        android:label="@string/confirm_phone_header"
+        tools:layout="@layout/cs_confirm_phone">
+        <action
+            android:id="@+id/action_ConfirmPhone_to_EditPhone"
+            app:destination="@id/createAccountPhoneNumberFragment" />
+        <action
+            android:id="@+id/action_ConfirmPhone_to_SetPassword"
+            app:destination="@id/createAccountSetPassword"
+            app:enterAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createAccountSetPassword"
+        android:name="com.futech.our_school.activities.register.create_account.CreateAccountPasswordFragment"
+        android:label="@string/set_password_header"
+        tools:layout="@layout/cs_set_password">
+        <action
+            android:id="@+id/action_SetPassword_to_EditPhone"
+            app:destination="@id/createAccountPhoneNumberFragment" />
+
+        <action
+            android:id="@+id/action_SetPassword_to_SetInformation"
+            app:destination="@id/createAccountSetInformation"
+            app:enterAnim="@android:anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/createAccountSetInformation"
+        android:name="com.futech.our_school.activities.register.create_account.CreateAccountSetInformation"
+        android:label="@string/cs_information_header"
+        tools:layout="@layout/cs_information">
+
+        <action
+            android:id="@+id/action_SetInformation_to_SetPassword"
+            app:destination="@id/createAccountPhoneNumberFragment" />
+
+        <action
+            android:id="@+id/action_SetInformation_to_PhoneNumber"
+            app:destination="@id/createAccountPhoneNumberFragment" />
+
+        <action
+            android:id="@+id/action_setInformation_to_loading"
+            app:destination="@id/createAccountComplete" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/createAccountComplete"
+        android:name="com.futech.our_school.activities.register.RegisterAccountComplete"
+        android:label="@string/cs_information_header"
+        tools:layout="@layout/fragment_register_loading">
+
+        <action
+            android:id="@+id/action_loading_to_setInformation"
+            app:destination="@id/createAccountSetInformation" />
+
+    </fragment>
+
+
+</navigation>

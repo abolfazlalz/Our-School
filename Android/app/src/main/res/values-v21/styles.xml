@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Style">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/text</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:textViewStyle">@style/NormalTextViewStyle</item>
+        <item name="android:buttonStyle">@style/NormalButtonStyle</item>
+        <item name="android:editTextStyle">@style/NormalEditTextStyle</item>
+        <item name="fontFamily">@font/text</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Style.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/text</item>
+        <item name="android:textViewStyle">@style/NormalTextViewStyle</item>
+        <item name="android:buttonStyle">@style/NormalButtonStyle</item>
+        <item name="android:editTextStyle">@style/NormalEditTextStyle</item>
+        <item name="fontFamily">@font/text</item>
+    </style>
+</resources>
