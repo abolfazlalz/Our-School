@@ -4,6 +4,7 @@ import android.content.Context;
 
 import androidx.annotation.Nullable;
 
+import com.android.volley.Request;
 import com.android.volley.VolleyError;
 import com.futech.our_school.R;
 import com.futech.our_school.utils.VolleyErrorTranslator;
@@ -52,6 +53,7 @@ public class UploadRequestControl extends ApiHelper<UploadRequestData> {
         Map<String, Object> files = new HashMap<>();
         files.put("file", file);
         ApiControl<UploadRequestData> apiControl = getApiControl("upload-new-list");
+        apiControl.addParameter(Request.Method.POST, "title", title);
         apiControl.uploadFile(files, new ApiControl.ApiListener<UploadRequestData>() {
             @Override
             public void onResponse(UploadRequestData api) {

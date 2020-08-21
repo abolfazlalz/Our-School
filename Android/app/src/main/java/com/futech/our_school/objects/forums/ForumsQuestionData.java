@@ -7,6 +7,7 @@ package com.futech.our_school.objects.forums;
 
 import com.futech.our_school.objects.LessonBookData;
 import com.futech.our_school.request.accounts.AccountData;
+import com.futech.our_school.request.media.MediaCollectionData;
 
 import java.util.Date;
 
@@ -20,6 +21,8 @@ public class ForumsQuestionData {
     private AccountData writer;
     private LessonBookData lesson;
     private ForumsAnswerData[] answers;
+    //todo: its not parsing in json
+    private MediaCollectionData mediaList;
 
     public int getId() {
         return id;
@@ -79,5 +82,9 @@ public class ForumsQuestionData {
 
     public void setAnswers(ForumsAnswerData[] answers) {
         this.answers = answers;
+    }
+
+    public MediaCollectionData getMediaList() {
+        return mediaList;
     }
 }

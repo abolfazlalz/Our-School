@@ -80,6 +80,15 @@
                     android:text="@string/app_name"
                     android:textSize="18sp" />
 
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/question_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="150dp"
+                    android:maxWidth="150dp"
+                    android:visibility="gone"
+                    android:scaleType="matrix"/>
+
             </LinearLayout>
 
         </LinearLayout>

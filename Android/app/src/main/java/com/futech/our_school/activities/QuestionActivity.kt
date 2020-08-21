@@ -10,6 +10,7 @@ import android.opengl.Visibility
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -22,6 +23,7 @@ import com.futech.our_school.objects.forums.ForumsQuestionData
 import com.futech.our_school.request.forums.ForumsApiControl
 import com.futech.our_school.utils.TourHelper
 import com.futech.our_school.utils.TourHelper.CreateTour.uncompleted
+import com.futech.our_school.utils.request.HttpHelper
 import com.futech.our_school.utils.request.listener.SelectListener
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import tourguide.tourguide.TourGuide
@@ -35,6 +37,7 @@ class QuestionActivity : AppCompatActivity() {
     lateinit var addAnswer: FloatingActionButton
     lateinit var progressDialog: ProgressDialog
     lateinit var refresh: SwipeRefreshLayout
+    lateinit var questionImage: ImageView
     private var id = -1
 
     private lateinit var addAnswerTour: TourHelper.CreateTour
@@ -52,6 +55,7 @@ class QuestionActivity : AppCompatActivity() {
         progressDialog = ProgressDialog(this)
         refresh = findViewById(R.id.refresh)
         noAnswer = findViewById(R.id.no_answers)
+        questionImage = findViewById(R.id.question_img)
         val addAnswerBtn = findViewById<Button>(R.id.add_answer_btn)
         addAnswerBtn.isEnabled = true
         addAnswerBtn.setOnClickListener {
@@ -113,6 +117,12 @@ class QuestionActivity : AppCompatActivity() {
                     }
                     AnswerAdapter.setAdapter(questionsAnswer, question.answers.toMutableList())
                 }
+
+                if (question.mediaList != null && question.mediaList.files.isNotEmpty()) {
+                    questionImage.visibility = View.VISIBLE
+                    HttpHelper.loadImage(this@QuestionActivity, question.mediaList.files[0].address, questionImage, null, 150, 150, "question-image-" + question.mediaList.files[0].id)
+                }
+
                 addAnswer.isEnabled = true
                 refresh.isRefreshing = false
 

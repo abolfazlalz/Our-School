@@ -56,7 +56,7 @@ public class ApiControl<T> {
     }
 
     public void uploadFile(Map<String, Object> imageFile, final ApiListener<T> listener) {
-        httpHelper.uploadFile(imageFile, this.getParams, this.getParams, responseHandler(listener));
+        httpHelper.uploadFile(imageFile, this.postParams, this.getParams, responseHandler(listener));
     }
 
     public void response(final ApiListener<T> listener) {
