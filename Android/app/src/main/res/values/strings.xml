@@ -129,4 +129,6 @@
     <string name="add_attachment_btn">Add attachment</string>
     <string name="attachment">Attachment</string>
     <string name="upload_photo_error">Unable to upload the photo</string>
+    <string name="no_answer" >No any answer exists for this question</string>
+    <string name="you_first_person">"You can first person answer to this question "</string>
 </resources>

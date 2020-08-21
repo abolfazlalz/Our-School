@@ -2,14 +2,16 @@ package com.futech.our_school.request.media;
 
 import org.joda.time.DateTime;
 
+import java.util.Date;
+
 public class FileData {
 
     private int id;
     private String address;
     private int collectionId;
     private String type;
-    private DateTime dateCreated;
-    private DateTime daeModified;
+    private Date dateCreated;
+    private Date daeModified;
 
     public int getId() {
         return id;
@@ -27,11 +29,11 @@ public class FileData {
         return type;
     }
 
-    public DateTime getDateCreated() {
+    public Date getDateCreated() {
         return dateCreated;
     }
 
-    public DateTime getDaeModified() {
+    public Date getDaeModified() {
         return daeModified;
     }
 }

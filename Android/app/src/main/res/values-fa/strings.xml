@@ -122,5 +122,8 @@
     <string name="action_settings">تنظیمات</string>
     <string name="no_attached_file">شما هیچ فایلی را پیوست نکرده اید</string>
     <string name="add_attachment_btn">افزودن پیوست</string>
-    <string name="attachment">Attachment</string>
+    <string name="attachment">پیوست فایل</string>
+    <string name="no_answer">پاسخی برای این سوال داده نشده است</string>
+    <string name="you_first_person">شما اولیل پاسخ این سوال را بنویسید</string>
+    <string name="upload_photo_error">ناتوانی در اپلود کردن تصویر</string>
 </resources>
