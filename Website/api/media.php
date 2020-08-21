@@ -45,6 +45,7 @@ class MediaApi extends ApiHelper
                 $uploadId = $media->add_new_media($_FILES['file'], $listId, MediaTableControl::TYPE_IMAGE);
                 $this->set_data('upload_id', $uploadId);
                 $this->set_data('list_id', $listId);
+                $this->set_status(true);
                 break;
         }
     }

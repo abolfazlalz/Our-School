@@ -27,8 +27,10 @@ class ForumsApi extends ApiHelper
                 self::uid_is_entered();
                 $mediaListId = -1;
                 self::parameters_are_entered(['title', 'text', 'lesson-id'], $_POST);
-                if ($media)
-                $insert = $questionTable->add_question($_GET['uid'], $_POST['title'], $_POST['text'], $_POST['lesson-id'], 0);
+                if (array_key_exists('upload-id', $_POST)) {
+                    $mediaListId = $_POST['upload-id'];
+                }
+                $insert = $questionTable->add_question($_GET['uid'], $_POST['title'], $_POST['text'], $_POST['lesson-id'], $mediaListId);
                 if ($insert > 0)
                     $this->set_status(true);
                 $this->set_data('id', $insert);

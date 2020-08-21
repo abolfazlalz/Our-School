@@ -24,8 +24,7 @@ class MediaTableControl extends TableControlHelper
      * @throws DatabaseException|UploadFileException
      */
     public function add_new_media($file, $collection, $type)
-    {
-        $type = $this->check_entered_type($type);
+    {$type = $this->check_entered_type($type);
 
         if (is_string($collection)) {
             $mediaCollection = new MediaCollectionControl();
@@ -41,11 +40,13 @@ class MediaTableControl extends TableControlHelper
         $imageFileType = strtolower(pathinfo($basename, PATHINFO_EXTENSION));
         if ($imageFileType == '')
             $imageFileType = 'png';
-        $address .= date('h-i-s') . '.' . $imageFileType;
+        $fileName = date('h-i-s') . '.' . $imageFileType;
+        $address .= $fileName;
+
 
         $resultUpload = UploadFileHelper::uploadFile($file, $address, 10000000);
         if ($resultUpload) {
-            $data = ['address' => $link, 'collectionId' => $collection, 'type' => $type];
+            $data = ['address' => $link . $fileName, 'collectionId' => $collection, 'type' => $type];
             $insert = $this->tableControl->insert_query($data);
             $this->check_query_run_result();
             return $insert;
@@ -57,6 +58,15 @@ class MediaTableControl extends TableControlHelper
     {
         if ($type != self::TYPE_IMAGE && $type != self::TYPE_VIDEO) return self::TYPE_IMAGE;
         return $type;
+    }
+
+    public function fix_format($array)
+    {
+        for ($i = 0; $i < count($array); $i++) {
+            $array[$i]['address'] = HOME_ADDRESS . $array[$i]['address'];
+        }
+
+        return $array;
     }
 
 }

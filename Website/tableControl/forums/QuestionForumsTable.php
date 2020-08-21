@@ -100,6 +100,7 @@ class QuestionForumsTable extends TableControlHelper
         foreach ($array as $item) {
             if (array_key_exists('writerId', $item)) {
                 $item['writer'] = (new AccountTableControl())->get_account_by_uid($item['writerId']);
+
                 unset($item['writerId']);
             }
             if (array_key_exists('lessonId', $item)) {
@@ -110,6 +111,9 @@ class QuestionForumsTable extends TableControlHelper
 
             if (count($array) == 1) {
                 $item['answers'] = (new AnswerForumsTable())->select_answers($item['id']);
+                $item['mediaList'] = (new MediaCollectionControl())->get_collection_by_id($item['mediaListId']);
+                unset($item['mediaListId']);
+
                 for ($i = 0; $i < count($item['answers']); $i++) {
                     $item['answers'][$i]['writer'] = (new AccountTableControl())->get_information($item['answers'][$i]['writerId']);
                     unset($item['answers'][$i]['writerId']);

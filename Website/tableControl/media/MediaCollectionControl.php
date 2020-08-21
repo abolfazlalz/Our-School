@@ -32,12 +32,41 @@ class MediaCollectionControl extends TableControlHelper
      * @return array
      * @throws DatabaseException
      */
-    public function get_collection_by_title($title) {
+    public function get_collection_by_title($title)
+    {
         $data = ['name' => $title];
-        $select = $this->tableControl->select_with_condition($data);
+        $select = $this->select_rows_by_condition($data);
         $this->check_query_run_result();
         if (count($select) == 0)
             return array();
         return $select[0];
+    }
+
+    /**
+     * @param $id
+     * @return array
+     * @throws DatabaseException
+     */
+    public function get_collection_by_id($id)
+    {
+        $data = ['id' => $id];
+        $select = $this->select_rows_by_condition($data);
+        $this->check_query_run_result();
+        if (count($select) == 0)
+            return array();
+        return $select[0];
+    }
+
+    /**
+     * @param $array
+     * @return mixed|void
+     * @throws DatabaseException
+     */
+    public function fix_format($array)
+    {
+        for ($i = 0; $i < count($array); $i++) {
+            $array[$i]['files'] = (new MediaTableControl())->select_rows_by_condition(['collectionId' => $array[$i]['id']]);
+        }
+        return $array;
     }
 }
